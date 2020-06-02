@@ -6,6 +6,7 @@ namespace lab1_api.Models {
         public int Id { get; set; }
 
         [Required]
+        [StringLength(25)]
         public string Title { get; set; }
         public int AuthorId { get; set; }
         public Author Author { get; set; }
