@@ -8,6 +8,7 @@ namespace lab1_api.Models {
         [Required]
         [StringLength(25)]
         public string Title { get; set; }
+        [Required]
         public int AuthorId { get; set; }
         public Author Author { get; set; }
     
